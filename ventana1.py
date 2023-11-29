@@ -1,15 +1,15 @@
 import sys
 
-from PyQt5.QtGui import QPixmap
-from PyQt5.QtWidgets import QMainWindow, QDesktopWidget, QLabel, QHBoxLayout, QApplication
 from PyQt5 import QtGui
+from PyQt5.QtGui import QPixmap
+from PyQt5.QtWidgets import QHBoxLayout, QApplication, QLabel, QDesktopWidget, QMainWindow
 
 
 class Ventana1(QMainWindow):
 
     # Metodo constructor de la ventana
     def __init__(self,parent=None):
-        super(Ventana1, self).__init__(parent)
+        super(Ventana1,self).__init__(parent)
 
         # poner el titulo
         self.setWindowTitle("Formulario de registro")
@@ -57,9 +57,6 @@ class Ventana1(QMainWindow):
         # Le ponemos las margenes
         self.horizontal.setContentsMargins(30, 30, 30, 30)
 
-        # PONER AL FINAL OJOOO
-        # indicamos que el layout principal del fondo es horizontal:
-        self.fondo.setLayout(self.horizontal)
 
 
 if __name__ == "__main__":
